@@ -1,0 +1,82 @@
+<template name="createEventTemp">
+	<form>
+		<div>
+			<label for="nameEvent-label">Name</label>
+		</div>
+		<div>
+			<input type="text" name="eventName" id="nameEvent-label" placeholder="Live democracy event" required autocomplete="eventName">
+		</div>
+
+		<div>
+			<label for="typeEvent-label">Type of event</label>
+		</div>
+		<div>
+			<input type="text" name="eventType" id="typeEvent-label" placeholder="Continent-wide Hangout" required autocomplete="eventType">
+		</div>
+
+		<div>
+			<label for="hostEvent-label">Host</label>
+		</div>
+		<div>
+			<input type="text" name="eventHost" id="hostEvent-label" placeholder="Person or organization" required autocomplete="eventHost">
+		</div>
+
+		<div>
+			<label for="startEvent-label">Start date/time</label>
+		</div>
+		<div>
+			<input type="datetime-local" name="eventStart" id="startEvent-label" required autocomplete="eventStart">
+		</div>
+
+		<div>
+			<label for="endEvent-label">End date/time</label>
+		</div>
+		<div>
+			<input type="datetime-local" name="eventEnd" id="endEvent-label" required autocomplete="eventEnd">
+		</div>
+
+		<div>
+			<label for="guestEvent-label">Guest list</label>
+		</div>
+		<div>
+			<input type="text" name="eventGuest" id="guestEvent-label" placeholder="Who's coming?" required autocomplete="eventGuest">
+		</div>
+
+		<fieldset>
+          <legend>Location</legend>
+
+          <div>
+          	<label for="addressEvent-label">Address</label>
+          	<input type="text" name="eventAddress" id="addressEvent-label" required="" placeholder="123 Any Street" autocomplete="billing street-address">
+          </div>
+
+          <div>
+          	<label for="cityEvent-label">City</label>
+          	<input type="text" name="eventCity" id="cityEvent-label" required="" placeholder="New York" autocomplete="billing locality">
+          </div>
+
+          <div>
+          	<label for="stateEvent-label">State</label>
+          	<input type="text" name="eventState" id="stateEvent-label" required="" placeholder="NY" autocomplete="billing region">
+          </div>
+
+          <div>
+          	<label for="zipEvent-label">Zip</label>
+          	<input type="text" name="eventZip" id="zipEvent-label" required="" placeholder="10011" autocomplete="billing postal-code">
+          </div>
+
+          <div>
+          	<label for="countryEvent-label">Country</label>
+          	<input type="text" name="eventCountry" id="countryEvent-label" required="" placeholder="USA" autocomplete="billing country">
+          </div>
+        </fieldset>
+
+        <div>
+			<label for="messageEvent-label">Message for guests?</label>
+		</div>
+		<div>
+			<input type="text" name="eventMessage" id="messageEvent-label" placeholder="This will be fun">
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</template>

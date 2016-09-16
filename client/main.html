@@ -1,0 +1,27 @@
+<head>
+  <title>Event planner</title>
+</head>
+
+<body>
+  <h1>Meet-up event planner</h1>
+
+  <div>
+    <button id='new-account'>Create account</button>
+    <button id='new-event'>Create event</button>
+      {{#if createNewAccount}}
+        {{> createAccountTemp}}
+      {{/if}}
+      {{#if createNewEvent}}
+        {{> createEventTemp}}
+      {{/if}}
+  </div>
+
+  <div>
+  <h3>Events</h3>
+    {{#each eventsCreated}}
+      {{> eventDisplayTemp}}
+    {{/each}}
+  </div>
+
+</body>
+

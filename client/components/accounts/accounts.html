@@ -1,0 +1,37 @@
+<template name="createAccountTemp">
+    <form>
+        <div>
+            <label for="name-label">Name</label>
+        </div>
+        <div>
+            <input type="name" name="accountName" id="name-label" placeholder="Eduardo Medina" required autocomplete="name"> 
+        </div>
+        <div>
+            <label for="email-label">Email</label>
+        </div>
+        <div>
+            <input type="email" name="accountEmail" id="email-label" placeholder="name@example.com" required autocomplete="accountEmail">
+        </div>
+        <div>
+            <label for="password-label">Password</label>
+        </div>
+        <div>
+            <input type="password" name="accountPassword" id="password-label" required autocomplete="accountPassword">
+        </div>
+        <div>
+            <label for="bio-label">Short bio</label>
+        </div>
+        <div>
+            <input type="text" name="accountBio" id="bio-label" placeholder="Employer, job title, etc">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</template>
+
+<template name="login">
+    <form>
+        <input type="email" name="logingEmail">
+        <input type="password" name="loginPassword">
+        <input type="submit" value="Login">
+    </form>
+</template>
