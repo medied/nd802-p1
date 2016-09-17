@@ -1,7 +1,32 @@
 <template name="eventDisplayTemp">
 	<div>
-		{{eventObj.eventName}}
-		{{eventObj.eventType}}
-		{{eventObj.eventHost}}
+		<div>
+			<h4>{{eventObj.eventName}}</h4>
+		</div>
+		<div>
+			<em>Event details</em>
+		</div>
+		<div>
+			Type: {{eventObj.eventType}}
+		</div>
+		<div>
+			Host: {{eventObj.eventHost}}
+		</div>
+		<div>
+			Starting time: {{eventObj.eventStart}}
+		</div>
+		<div>
+			Ending time: {{eventObj.eventEnd}}
+		</div>
+		<div>
+			Guests: {{eventObj.eventGuest}}
+		</div>
+		<div>
+			Location: {{eventObj.eventAddress}}, {{eventObj.eventCity}}, {{eventObj.eventState}} {{eventObj.eventZip}} {{eventObj.eventCountry}}
+		</div>
+		<div>
+			Message: {{eventObj.eventMessage}}
+		</div>
+		<hr>
 	</div>
 </template>

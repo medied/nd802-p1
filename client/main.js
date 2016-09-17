@@ -7,7 +7,6 @@ import { Events } from '../imports/api/events-api.js';
 import './main.html';
 
 Template.body.onCreated(function bodyOnCreated() {
-  // this.state = new ReactiveDict();
   Meteor.subscribe('events');
 });
 
@@ -24,13 +23,12 @@ Template.body.helpers({
 		return Session.get("createNewEvent");
 	},
 	eventsCreated() {
-		return Events.find({});
+		return Events.find({}, { sort: { createdAt: -1 } });
 	}
 });
 
 Template.body.events({
 	'click #new-account': function(event){
-		// console.log("Clicked on button: " + event.currentTarget.id);
 		Session.set("createNewAccount", !Session.get("createNewAccount"));
 		//Avoid the two forms to be displayed at the same time
 		if (Session.get("createNewEvent") == true){
