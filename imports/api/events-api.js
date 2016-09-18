@@ -15,5 +15,10 @@ Meteor.methods({
 			eventObj,
 			createdAt: new Date()
 		});		
+	},
+	'events.remove'(taskId) {
+		Events.remove(taskId);
+		console.log("In events.remove");
+		console.log("this.id: ", taskId);
 	}
 });
