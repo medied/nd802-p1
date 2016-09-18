@@ -3,9 +3,6 @@ import { Template } from 'meteor/templating';
 
 import { Events } from '../../../imports/api/events-api.js';
 
-// Template.createEventTemp.onCreated(function eventTempOnCreated() {
-// 	Meteor.subscribe('events');
-// });
 
 Template.createEventTemp.events({
 	'submit form': function(event) {
@@ -26,6 +23,7 @@ Template.createEventTemp.events({
 		// Insert event object into the collection
 		Meteor.call('events.insert', eventObj);
 
-
+		// Hide event form after submitting
+		Session.set("createNewEvent", false);
 	}
 });
