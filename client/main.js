@@ -36,7 +36,6 @@ Template.body.events({
 		}
 	},
 	'click #new-event': function(event){
-		console.log("Clicked on button: " + event.currentTarget.id);
 		Session.set("createNewEvent", !Session.get("createNewEvent"));
 		//Avoid the two forms to be displayed at the same time
 		if (Session.get("createNewAccount") == true){
