@@ -34,7 +34,6 @@ Template.body.events({
 		if (Session.get("createNewEvent") == true){
 			Session.set("createNewEvent", false);
 		}
-		console.log("Changed createNewAccount to: ", Session.get("createNewAccount"));
 	},
 	'click #new-event': function(event){
 		console.log("Clicked on button: " + event.currentTarget.id);
@@ -43,6 +42,5 @@ Template.body.events({
 		if (Session.get("createNewAccount") == true){
 			Session.set("createNewAccount", false);
 		}
-		console.log("Changed createNewAccount to: ", Session.get("createNewEvent"));
 	}
 });
