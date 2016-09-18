@@ -1,8 +1,5 @@
 body {
   font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-  background-attachment: fixed;
  
   position: absolute;
   top: 0;
@@ -16,9 +13,34 @@ body {
   font-size: 14px;
 }
 
+h1 {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
   min-height: 100%;
   background: white;
+}
+
+.form-buttons {
+	text-align: center;
+}
+
+.event-title {
+	text-align: center;
+	margin-top: 5%;
+	font-size: 25px;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 15px;
+  border: none;
+  position: relative;
 }

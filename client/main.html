@@ -6,7 +6,7 @@
   <div class="container">
     <h1>Meet-up event planner</h1>
 
-    <div>
+    <div class="form-buttons">
       <button id='new-account'>Create account</button>
       <button id='new-event'>Create event</button>
         {{#if createNewAccount}}
@@ -18,7 +18,6 @@
     </div>
 
     <div>
-    <h3>Events</h3>
       {{#each eventsCreated}}
         {{> eventDisplayTemp}}
       {{/each}}
