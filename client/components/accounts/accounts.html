@@ -1,37 +1,29 @@
 <template name="createAccountTemp">
-    <form>
+    <form id="input-account">
         <div>
             <label for="name-label">Name</label>
         </div>
         <div>
-            <input type="name" name="accountName" id="name-label" placeholder="Eduardo Medina" required autocomplete="name"> 
+            <input type="name" name="accountName" id="name-label" placeholder="Eduardo Medina"> 
         </div>
         <div>
             <label for="email-label">Email</label>
         </div>
         <div>
-            <input type="email" name="accountEmail" id="email-label" placeholder="name@example.com" required autocomplete="accountEmail">
+            <input type="email" name="accountEmail" id="email-label" placeholder="name@example.com">
         </div>
         <div>
             <label for="password-label">Password</label>
         </div>
         <div>
-            <input type="password" name="accountPassword" id="password-label" required autocomplete="accountPassword">
+            <input type="password" name="accountPassword" id="password-label">
         </div>
         <div>
-            <label for="bio-label">Short bio</label>
+            <label for="bio-label">Short bio (optional)</label>
         </div>
         <div>
-            <input type="text" name="accountBio" id="bio-label" placeholder="Employer, job title, etc">
+            <textarea type="text" name="accountBio" id="bio-label" placeholder="Employer, job title, etc"></textarea>
         </div>
-        <input type="submit" value="Submit">
-    </form>
-</template>
-
-<template name="login">
-    <form>
-        <input type="email" name="logingEmail">
-        <input type="password" name="loginPassword">
-        <input type="submit" value="Login">
+        <input type="submit" value="Create my account now">
     </form>
 </template>

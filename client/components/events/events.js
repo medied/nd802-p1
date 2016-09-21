@@ -3,46 +3,45 @@ import { Template } from 'meteor/templating';
 
 import { Events } from '../../../imports/api/events-api.js';
 
-// Template.createEventTemp.onRendered(function () {
-// 	$("#input-event").validate({
-// 		rules: {
-// 			eventName: {
-// 				required: true
-// 			},
-// 			eventType: {
-// 				required: true
-// 			},
-// 			eventHost: {
-// 				required: true
-// 			},
-// 			eventStart: {
-// 				required: true
-// 			},
-// 			eventEnd: {
-// 				required: true
-// 			},
-// 			eventGuest: {
-// 				required: true
-// 			},
-// 			eventAddress: {
-// 				required: true
-// 			},
-// 			eventCity: {
-// 				required: true
-// 			},
-// 			eventState: {
-// 				required: true
-// 			},
-// 			eventZip: {
-// 				required: true
-// 			},
-// 			eventCountry: {
-// 				required: true
-// 			}
-// 		}
-// 		// messages: {} // (validate dates)
-// 	});
-// });
+Template.createEventTemp.onRendered(function () {
+	$("#input-event").validate({
+		rules: {
+			eventName: {
+				required: true
+			},
+			eventType: {
+				required: true
+			},
+			eventHost: {
+				required: true
+			},
+			eventStart: {
+				required: true
+			},
+			eventEnd: {
+				required: true
+			},
+			eventGuest: {
+				required: true
+			},
+			eventAddress: {
+				required: true
+			},
+			eventCity: {
+				required: true
+			},
+			eventState: {
+				required: true
+			},
+			eventZip: {
+				required: true
+			},
+			eventCountry: {
+				required: true
+			}
+		}
+	});
+});
 
 Template.createEventTemp.events({
 	'submit form': function(event) {
@@ -89,8 +88,3 @@ Template.createEventTemp.events({
 		Session.set("createNewEvent", false);
 	}
 });
-
-// $.validator.addMethod( 'bookUnique', ( title ) => {
-//   let exists = Books.findOne( { "title": title }, { fields: { "title": 1 } } );
-//   return exists ? false : true;
-// });
