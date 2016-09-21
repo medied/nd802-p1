@@ -28,13 +28,16 @@ Template.createAccountTemp.events({
 
 		var emailVar = event.target.accountEmail.value;
 		var passwordVar = event.target.accountPassword.value;
-		console.log("Account form submitted");
-
 
         // Create account 
 		Accounts.createUser({
 			email: emailVar,
 			password: passwordVar
+		},	function(error) {
+				if (error)
+					console.log(error);
+				else 
+					sAlert.success('Account successfully created!');
 		});
 
 		// Hide account form after submitting

@@ -82,7 +82,12 @@ Template.createEventTemp.events({
 		}
 
 		// Insert event object into the collection
-		Meteor.call('events.insert', eventObj);
+		Meteor.call('events.insert', eventObj, function(error) {
+			if (error)
+					console.log(error);
+				else 
+					sAlert.success('Event successfully created!');
+		});
 
 		// Hide event form after submitting
 		Session.set("createNewEvent", false);
