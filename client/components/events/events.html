@@ -1,5 +1,5 @@
 <template name="createEventTemp">
-	<form id="input-event">
+	<form id="input-event" autocomplete="on">
 		<div>
 			<label for="nameEvent-label">Name</label>
 		</div>
@@ -52,12 +52,12 @@
 
           <div>
           	<label for="cityEvent-label">City</label>
-          	<input type="text" name="eventCity" id="cityEvent-label" placeholder="New York" autocomplete="billing locality">
+          	<input type="text" name="eventCity" id="cityEvent-label" placeholder="New York" autocomplete="billing address-level2">
           </div>
 
           <div>
           	<label for="stateEvent-label">State</label>
-          	<input type="text" name="eventState" id="stateEvent-label" placeholder="NY" autocomplete="billing region">
+          	<input type="text" name="eventState" id="stateEvent-label" placeholder="NY" autocomplete="billing address-level1">
           </div>
 
           <div>

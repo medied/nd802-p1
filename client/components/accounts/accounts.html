@@ -1,22 +1,22 @@
 <template name="createAccountTemp">
-    <form id="input-account">
+    <form id="input-account" autocomplete="on">
         <div>
             <label for="name-label">Name</label>
         </div>
         <div>
-            <input type="name" name="accountName" id="name-label" placeholder="Eduardo Medina"> 
+            <input type="name" name="accountName" id="name-label" placeholder="Eduardo Medina" autocomplete="name"> 
         </div>
         <div>
             <label for="email-label">Email</label>
         </div>
         <div>
-            <input type="email" name="accountEmail" id="email-label" placeholder="name@example.com">
+            <input type="email" name="accountEmail" id="email-label" placeholder="name@example.com" autocomplete="email">
         </div>
         <div>
             <label for="password-label">Password</label>
         </div>
         <div>
-            <input type="password" name="accountPassword" id="password-label">
+            <input type="password" name="accountPassword" id="password-label" autocomplete="current-password">
         </div>
         <div>
             <label for="bio-label">Short bio (optional)</label>
