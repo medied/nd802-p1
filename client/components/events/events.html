@@ -1,82 +1,67 @@
 <template name="createEventTemp">
-	<form id="input-event" autocomplete="on">
-		<div>
-			<label for="nameEvent-label">Name</label>
-		</div>
-		<div>
-			<input type="text" name="eventName" id="nameEvent-label" placeholder="Live democracy event" autocomplete="eventName" autofocus>
-		</div>
-
-		<div>
-			<label for="typeEvent-label">Type of event</label>
-		</div>
-		<div>
-			<input type="text" name="eventType" id="typeEvent-label" placeholder="Continent-wide Hangout"  autocomplete="eventType">
-		</div>
-
-		<div>
-			<label for="hostEvent-label">Host</label>
-		</div>
-		<div>
-			<input type="text" name="eventHost" id="hostEvent-label" placeholder="Person or organization"  autocomplete="eventHost">
-		</div>
-
-		<div>
-			<label for="startEvent-label">Start date/time</label>
-		</div>
-		<div>
-			<input type="datetime-local" name="eventStart" id="startEvent-label" autocomplete="eventStart">
-		</div>
-
-		<div>
-			<label for="endEvent-label">End date/time</label>
-		</div>
-		<div>
-			<input type="datetime-local" name="eventEnd" id="endEvent-label" autocomplete="eventEnd">
-		</div>
-
-		<div>
-			<label for="guestEvent-label">Guest list</label>
-		</div>
-		<div>
-			<input type="text" name="eventGuest" id="guestEvent-label" placeholder="Who's coming?" autocomplete="eventGuest">
-		</div>
-
-		<fieldset>
-          <legend>Location</legend>
-
-          <div>
-          	<label for="addressEvent-label">Address</label>
-          	<input type="text" name="eventAddress" id="addressEvent-label" placeholder="123 Any Street" autocomplete="billing street-address">
-          </div>
-
-          <div>
-          	<label for="cityEvent-label">City</label>
-          	<input type="text" name="eventCity" id="cityEvent-label" placeholder="New York" autocomplete="billing address-level2">
-          </div>
-
-          <div>
-          	<label for="stateEvent-label">State</label>
-          	<input type="text" name="eventState" id="stateEvent-label" placeholder="NY" autocomplete="billing address-level1">
-          </div>
-
-          <div>
-          	<label for="zipEvent-label">Zip</label>
-          	<input type="text" name="eventZip" id="zipEvent-label" placeholder="10011" autocomplete="billing postal-code">
-          </div>
-
-          <div>
-          	<label for="countryEvent-label">Country</label>
-          	<input type="text" name="eventCountry" id="countryEvent-label" placeholder="USA" autocomplete="billing country">
-          </div>
-        </fieldset>
-
-        <div>
-			<label for="messageEvent-label">Message for guests (optional)</label>
-		</div>
-		<div>
-			<textarea type="text" name="eventMessage" id="messageEvent-label" placeholder="Include any information you would like to make avaialble for guests"></textarea>
-		</div>
-		<input type="submit" value="Create my event now">
-	</form>
+	<div class="form-template">
+		<form id="input-event" autocomplete="on">
+			<div class="form-group">
+				<label for="nameEvent-label">Name</label>
+				<input type="text" class="form-control" name="eventName" id="nameEvent-label" placeholder="Live democracy event" autocomplete="eventName" autofocus>
+			</div>
+			<div class="form-group">
+				<label for="typeEvent-label">Type of event</label>
+				<input type="text" class="form-control" name="eventType" id="typeEvent-label" placeholder="Continent-wide Hangout"  autocomplete="eventType">
+			</div>
+			<div class="form-group">
+				<label for="hostEvent-label">Host</label>
+				<input type="text" class="form-control" name="eventHost" id="hostEvent-label" placeholder="Person or organization"  autocomplete="eventHost">
+			</div>
+			<div class="form-group">
+				<label for="startEvent-label">Start date/time</label>
+				<input type="datetime-local" class="form-control" name="eventStart" id="startEvent-label" autocomplete="eventStart">
+			</div>
+			<div class="form-group">
+				<label for="endEvent-label">End date/time</label>
+				<input type="datetime-local" class="form-control" name="eventEnd" id="endEvent-label" autocomplete="eventEnd">
+			</div>
+			<div class="form-group">
+				<label for="guestEvent-label">Guest list</label>
+				<input type="text" class="form-control" name="eventGuest" id="guestEvent-label" placeholder="Who's coming?" autocomplete="eventGuest">
+			</div>
+		
+			<fieldset>
+		          <legend>Location</legend>
+		
+		          <div>
+		          	<label for="addressEvent-label">Address</label>
+		          	<input type="text" name="eventAddress" id="addressEvent-label" placeholder="123 Any Street" autocomplete="billing street-address">
+		          </div>
+		
+		          <div>
+		          	<label for="cityEvent-label">City</label>
+		          	<input type="text" name="eventCity" id="cityEvent-label" placeholder="New York" autocomplete="billing address-level2">
+		          </div>
+		
+		          <div>
+		          	<label for="stateEvent-label">State</label>
+		          	<input type="text" name="eventState" id="stateEvent-label" placeholder="NY" autocomplete="billing address-level1">
+		          </div>
+		
+		          <div>
+		          	<label for="zipEvent-label">Zip</label>
+		          	<input type="text" name="eventZip" id="zipEvent-label" placeholder="10011" autocomplete="billing postal-code">
+		          </div>
+		
+		          <div>
+		          	<label for="countryEvent-label">Country</label>
+		          	<input type="text" name="eventCountry" id="countryEvent-label" placeholder="USA" autocomplete="billing country">
+		          </div>
+		        </fieldset>
+		
+		        <div>
+				<label for="messageEvent-label">Message for guests (optional)</label>
+			</div>
+			<div>
+				<textarea type="text" name="eventMessage" id="messageEvent-label" placeholder="Include any information you would like to make avaialble for guests"></textarea>
+			</div>
+			<input type="submit" value="Create my event now" class="btn btn-success">
+		</form>
+	</div>
 </template>

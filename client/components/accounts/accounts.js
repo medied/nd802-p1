@@ -35,9 +35,11 @@ Template.createAccountTemp.events({
 			password: passwordVar
 		},	function(error) {
 				if (error) {
+					console.log(error);
 					sAlert.error(error);
 				}
 				else { 
+					console.log("Account successfully created!");
 					sAlert.success('Account successfully created!');
 				}
 		});

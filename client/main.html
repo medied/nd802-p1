@@ -1,4 +1,5 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Event planner</title>
 </head>
 
@@ -8,8 +9,8 @@
     <h1>Meet-up event planner</h1>
 
     <div class="form-buttons">
-      <button id='new-account'>Create account</button>
-      <button id='new-event'>Create event</button>
+      <button id='new-account' class="btn btn-primary">Create account</button>
+      <button id='new-event' class="btn btn-primary">Create event</button>
         {{#if createNewAccount}}
           {{> createAccountTemp}}
         {{/if}}
