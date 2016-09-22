@@ -19,6 +19,20 @@ h1 {
 	margin-bottom: 5%;
 }
 
+fieldset {
+  border: 1px;
+  border-radius: 5px;
+  background: #F2F2F2;
+  padding: 5px;
+  margin: 0;
+}
+
+.location-legend {
+  width:auto; /* Or auto */
+  padding:0 10px; /* To give a bit of padding on the left and right */
+  border-bottom:none;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -33,6 +47,9 @@ h1 {
 .form-template {
   margin-top: 5%;
   margin-bottom: 10%;
+  border-style: dashed;
+  border-width: thin;
+  padding: 10px;
 }
 
 .event-title {

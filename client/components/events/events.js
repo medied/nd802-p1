@@ -50,6 +50,8 @@ Template.createEventTemp.events({
 		var targetForm = event.target;
 		var eventObj = {};
 
+
+
 		// Construct event object 
 		for (var i = 0; i < targetForm.length - 1; i++) {
 			if (targetForm[i].localName != "fieldset") {
@@ -88,5 +90,10 @@ Template.createEventTemp.events({
 
 		// Hide event form after submitting
 		Session.set("createNewEvent", false);
+	},
+	'click .datetimepicker': function(event) {
+		console.log("Click on datetimepiker");
+		console.log("event: ", event);
+		$('.datetimepicker').datetimepicker();
 	}
 });
