@@ -34,10 +34,12 @@ Template.createAccountTemp.events({
 			email: emailVar,
 			password: passwordVar
 		},	function(error) {
-				if (error)
-					console.log(error);
-				else 
+				if (error) {
+					sAlert.error(error);
+				}
+				else { 
 					sAlert.success('Account successfully created!');
+				}
 		});
 
 		// Hide account form after submitting

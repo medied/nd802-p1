@@ -55,8 +55,6 @@ Template.createEventTemp.events({
 			if (targetForm[i].localName != "fieldset") {
 				// Make date and time more friendly readable 
 				if (targetForm[i].name == "eventStart") {
-					console.log("Processing start date");
-					// var dateKey = targetForm[i].name;
 					var startHolder = new Date(targetForm[i].value);
 					
 					var eventStartDate = startHolder.toDateString();
@@ -65,7 +63,6 @@ Template.createEventTemp.events({
 					eventObj["eventStartDate"] = eventStartDate;
 					eventObj["eventStartHour"] = eventStartHour;
 				}else if (targetForm[i].name == "eventEnd") {
-					console.log("Processing end date");
 					var endHolder = new Date(targetForm[i].value);
 					
 					var eventEndDate = endHolder.toDateString();
