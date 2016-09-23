@@ -92,8 +92,6 @@ Template.createEventTemp.events({
 		Session.set("createNewEvent", false);
 	},
 	'click .datetimepicker': function(event) {
-		console.log("Click on datetimepiker");
-		console.log("event: ", event);
 		$('.datetimepicker').datetimepicker();
 	}
 });

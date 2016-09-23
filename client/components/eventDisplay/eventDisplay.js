@@ -8,7 +8,5 @@ import './eventDisplay.html';
 Template.eventDisplayTemp.events({
 	'click .delete'() {
 		Meteor.call('events.remove', this._id);
-		console.log("Click on delete");
-		console.log("this.id: ", this._id);
 	}
 });
