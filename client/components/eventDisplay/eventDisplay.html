@@ -1,5 +1,6 @@
 <template name="eventDisplayTemp">
-	<div>
+	<div class="event-block">
+		<hr>
 		<div class="event-title">
 			<span>{{eventObj.eventName}}</span>
 			<button class="delete">&times;</button>
@@ -7,27 +8,33 @@
 		<div>
 			<em>Event details</em>
 		</div>
-		<div>
-			Type: {{eventObj.eventType}}
+		<div class="event-detail-row">
+			<span class="event-detail">Type:</span>
+			<span class="event-detail-obj">{{eventObj.eventType}}</span>
 		</div>
-		<div>
-			Host: {{eventObj.eventHost}}
+		<div class="event-detail-row">
+			<span class="event-detail">Host:</span>
+			<span class="event-detail-obj">{{eventObj.eventHost}}</span>
 		</div>
-		<div>
-			Starting time: {{eventObj.eventStartDate}} at {{eventObj.eventStartHour}} hours
+		<div class="event-detail-row">
+			<span class="event-detail">Starts:</span>
+			<span class="event-detail-obj">{{eventObj.eventStartDate}} at {{eventObj.eventStartHour}} hours</span>
 		</div>
-		<div>
-			Ending time: {{eventObj.eventEndDate}} at {{eventObj.eventEndHour}} hours
+		<div class="event-detail-row">
+			<span class="event-detail">Ends:</span>
+			<span class="event-detail-obj">{{eventObj.eventEndDate}} at {{eventObj.eventEndHour}} hours</span>
 		</div>
-		<div>
-			Guests: {{eventObj.eventGuest}}
+		<div class="event-detail-row">
+			<span class="event-detail">Guests:</span>
+			<span class="event-detail-obj">{{eventObj.eventGuest}}</span>
 		</div>
-		<div>
-			Location: {{eventObj.eventAddress}}, {{eventObj.eventCity}}, {{eventObj.eventState}} {{eventObj.eventZip}} {{eventObj.eventCountry}}
+		<div class="event-detail-row">
+			<span class="event-detail">Location:</span>
+			<span class="event-detail-obj">{{eventObj.eventAddress}}, {{eventObj.eventCity}}, {{eventObj.eventState}} {{eventObj.eventZip}} {{eventObj.eventCountry}}</span>
 		</div>
-		<div>
-			Message: {{eventObj.eventMessage}}
+		<div class="event-detail-row">
+			<span class="event-detail">Message:</span>
+			<span class="event-detail-obj">{{eventObj.eventMessage}}</span>
 		</div>
-		<hr>
 	</div>
 </template>
