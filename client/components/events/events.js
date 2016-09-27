@@ -16,10 +16,13 @@ Template.createEventTemp.onRendered(function () {
 				required: true
 			},
 			eventStart: {
-				required: true
+				required: true,
+				startNotThePast: true
 			},
 			eventEnd: {
-				required: true
+				required: true,
+				endNotThePast: true,
+				endsAfterStart: true
 			},
 			eventGuest: {
 				required: true
@@ -39,6 +42,15 @@ Template.createEventTemp.onRendered(function () {
 			eventCountry: {
 				required: true
 			}
+		},
+		messages: {
+			eventStart: {
+				startNotThePast: "Start date/time can't be in the past."
+			},
+			eventEnd: {
+				endNotThePast: "End date/time can't be in the past.",
+				endsAfterStart: "End date/time can't be before or the same as the Start date/time."
+			}
 		}
 	});
 });
@@ -49,8 +61,6 @@ Template.createEventTemp.events({
 
 		var targetForm = event.target;
 		var eventObj = {};
-
-
 
 		// Construct event object 
 		for (var i = 0; i < targetForm.length - 1; i++) {
@@ -93,5 +103,6 @@ Template.createEventTemp.events({
 	},
 	'click .datetimepicker': function(event) {
 		$('.datetimepicker').datetimepicker();
+		console.log("click on .datetimepicker");
 	}
 });

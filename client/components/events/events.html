@@ -14,16 +14,16 @@
 				<input type="text" class="form-control" name="eventHost" id="hostEvent-label" placeholder="Person or organization"  autocomplete="eventHost">
 			</div>
 			
-			<!-- Start -->
+			<!-- Start data & time -->
 			<div class="form-group">
 				<label for="startEvent-label">Start date/time</label>
 				<div class="input-group datetimepicker">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-					<input type="text" class="form-control" name="eventStart" id="startEvent-label" autocomplete="eventStart">
+					<input type="text" class="form-control" name="eventStart" id="startEvent" autocomplete="eventStart">
 				</div>
 			</div>
 
-			<!-- End -->
+			<!-- End date & time -->
 			<div class="form-group">
 				<label for="endEvent-label">End date/time</label>
 				<div class="input-group datetimepicker">
@@ -72,7 +72,7 @@
 				<textarea type="text" class="form-control" name="eventMessage" id="messageEvent-label" placeholder="Include any information you would like to make avaialble for guests"></textarea>
 			</div>
 
-			<input type="submit" value="Create my event now" class="btn btn-success">
+			<input type="submit" value="Create my event now" id="createEvent" class="btn btn-success">
 		</form>
 	</div>
 </template>
