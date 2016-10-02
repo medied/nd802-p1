@@ -7,7 +7,12 @@
 			</div>
 			<div class="form-group">
 				<label for="typeEvent-label">Type of event</label>
-				<input type="text" class="form-control" name="eventType" id="typeEvent-label" placeholder="Football party to watch the final"  autocomplete="eventType">
+				<input type="text" list="events" class="form-control" name="eventType" id="typeEvent-label" placeholder="Football party to watch the final"  autocomplete="eventType">
+				<datalist id="events">
+					<option value="Party"></option>
+					<option value="Sport event"></option>
+					<option value="Hackathon"></option>
+				</datalist>
 			</div>
 			<div class="form-group">
 				<label for="hostEvent-label">Host</label>
