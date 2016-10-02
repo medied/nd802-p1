@@ -18,7 +18,7 @@ Clone from Github or download files from project submission.
 
 Once in the right directory, just type the `meteor` command, your app will be deployed on http://localhost:3000/. You can visualize the flow in [this example](https://www.meteor.com/tutorials/blaze/creating-an-app).
 
-### Notes on deployment 
+## Notes on deployment 
 
 Based on what's noted in the [rubric](https://review.udacity.com/#!/rubrics/109/view): 
 
