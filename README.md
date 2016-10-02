@@ -1,6 +1,6 @@
 # Meet-Up Event Planner: nd802-P1
 
-This app was build to meet the [rubric requirements](https://review.udacity.com/#!/rubrics/109/view) of Udacity's first project of the nd802 Nanodegree. The app was built using [Meteor](https://www.meteor.com/). 
+This app was built to meet the [rubric requirements](https://review.udacity.com/#!/rubrics/109/view) of Udacity's first project of the nd802 Nanodegree. The app was built using [Meteor](https://www.meteor.com/). 
 
 
 ## In order to deploy this app you follow the following steps :
