@@ -16,7 +16,7 @@ Clone from Github or download files from project submission.
 
 ### Locate terminal on the right folder and deploy
 
-Once in the right directory, just type the `meteor` command, your app will be deployed on http://localhost:3000/. You can visualize the flow in [this example](https://www.meteor.com/tutorials/blaze/creating-an-app).
+Once in the right directory, type the `meteor run --production` command, your app will be deployed on http://localhost:3000/. You can visualize the flow in [this example](https://www.meteor.com/tutorials/blaze/creating-an-app). Note that running `meteor run --production` (instead of simply `meteor` ) minimizes and concatenates JS and CSS assests as required in the rubric. 
 
 ## Notes on deployment 
 
