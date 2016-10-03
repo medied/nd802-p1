@@ -4,6 +4,7 @@ import { Template } from 'meteor/templating';
 import { Events } from '../../../imports/api/events-api.js';
 
 Template.createEventTemp.onRendered(function () {
+	$("#nameEvent-label").focus();
 	$("#input-event").validate({
 		rules: {
 			eventName: {

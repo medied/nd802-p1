@@ -1,6 +1,7 @@
 import { Template } from 'meteor/templating';
 
 Template.createAccountTemp.onRendered(function () {
+	$("#name-label").focus();
 	$("#input-account").validate({
 		rules: {
 			accountName: {
